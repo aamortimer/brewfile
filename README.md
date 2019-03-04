@@ -2,7 +2,23 @@
 New mac setup
 
 ## Install
-Running `./install.sh` will guide you through setting up the following.
+You can install this project by either running:
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/aamortimer/brewfile/master/install.sh | sh)"
+```
+
+or
+
+```bash
+mkdir -p ~/Sites/brefile
+cd ~/Sites
+git clone https://github.com/aamortimer/brewfile.git
+cd ~/Sites/brewfile
+./install.sh
+```
+
+The above will guide you through setting up the following.
 
 * Installs XCode command line tools if not already installed
 * Install brew and homebrew file if not already installed (https://github.com/rcmdnk/homebrew-file)
