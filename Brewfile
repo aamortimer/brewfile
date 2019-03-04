@@ -17,16 +17,12 @@ brew 'openldap'
 brew 'libiconv'
 
 brew 'imagemagick'
-brew 'zsh'
-brew 'zsh-completions'
-brew 'zsh-syntax-highlighting'
 brew 'mas'
 brew 'ffmpeg'
 brew 'tmux'
 brew 'git'
 brew 'bash-completion'
 brew 'bash-git-prompt'
-
 
 cask 'google-chrome'
 cask 'alfred'
@@ -43,7 +39,6 @@ cask 'visual-studio-code'
 
 mas 'Xcode', id: 497799835
 mas 'The Unarchiver', id: 425424353
-mas 'Filedrop', id: 659443478
 
 ## Work only Apps
 cask 'microsoft-office'
