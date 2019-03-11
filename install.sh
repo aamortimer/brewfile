@@ -9,6 +9,22 @@ command_exists () {
 }
 
 ##
+# Setup SSH
+##
+read -p "Setup SSH keys (Y/n)?" choice
+case "$choice" in
+	n|N )
+		echo "Skipping SSH keys"
+	;;
+	* )
+		echo "Setting up SSH keys"
+		read -p "Enter your email address: " email
+
+		ssh-keygen -t rsa -b 4096 -C "$email"
+	;;
+esac
+
+##
 # XCode command line tools
 ##
 echo "Checking to see if we need to install xcode command line tools"
@@ -185,22 +201,6 @@ if [[ $brewApache == "TRUE" ]]; then
 		;;
 	esac
 fi
-
-##
-# Setup SSH
-##
-read -p "Setup SSH keys (Y/n)?" choice
-case "$choice" in
-	n|N )
-		echo "Skipping SSH keys"
-	;;
-	* )
-		echo "Setting up SSH keys"
-		read -p "Enter your email address: " email
-
-		ssh-keygen -t rsa -b 4096 -C "$email"
-	;;
-esac
 
 printf "\n=================\n\n"
 

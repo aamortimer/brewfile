@@ -89,3 +89,12 @@ done
 autoload -U compinit
 compinit
 ```
+
+
+### Install apache modules
+You can install this project by either running:
+
+```bash
+npm install --global apache-module-manager
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/aamortimer/brewfile/master/apachemod.sh | sh)"
+```
